@@ -1,5 +1,3 @@
-__author__ = 'zmiller'
-
 
 def hist(s):
     """returns the histogram of the characters in s
@@ -11,7 +9,13 @@ def hist(s):
     {'!': 2, 'x': 2}
 
     """
-    pass
+    solutions = {}
+    for char is s:
+        if char not in solutions:
+            solutions [char] = 1
+        else:
+            solutions [char] +=1
+    return solutions 
 
 
 def str_to_int(s):
@@ -39,4 +43,6 @@ def null_list(length):
     [None]
 
     """
-    pass
+    if not mylist:
+        print "Nothing here"
+        
